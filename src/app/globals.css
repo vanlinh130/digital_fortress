@@ -26,6 +26,14 @@ body {
     }
 }
 
-.bg-text {
-    color: linear-gradient(45deg, #4d62e5 0%, #87ddee 45.31%, #b6f09c 100%);
+.gradient-text {
+    background: linear-gradient(45deg, #82dbf7 0%, #b6f09c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-heading {
+    background: linear-gradient(45deg, #4d62e5 0%, #87ddee 45.31%, #b6f09c 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
