@@ -3,6 +3,7 @@ import Image from 'next/image';
 import login from '../../public/Illustration.png';
 import { TfiEmail } from 'react-icons/tfi';
 import { PiLockKey } from 'react-icons/pi';
+import Link from 'next/link';
 
 export default function Login() {
     const [email, setEmail] = useState('');
@@ -74,11 +75,11 @@ export default function Login() {
                                 Forgot Password?
                             </a>
                         </div>
-                        <button className="w-full bg-[#B6F09C] hover:bg-[#9ff876] rounded-xl text-[#0C1132] text-[16px] font-semibold">
-                            <a href="/dashboard" className="py-2 px-6">
+                        <Link href="/dashboard">
+                            <button className="w-full bg-[#B6F09C] hover:bg-[#9ff876] py-2 px-6 rounded-xl text-[#0C1132] text-[16px] font-semibold">
                                 Log in
-                            </a>
-                        </button>
+                            </button>
+                        </Link>
                         <p className="mt-6 text-sm text-center text-[#6F767E]">
                             Don’t have an account?{' '}
                             <a href="/dashboard" className="gradient-text">
