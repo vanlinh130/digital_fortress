@@ -107,7 +107,7 @@ export default function Dashboard() {
                                     <span className="bg-[#0E5A3A] text-[#46E8A5] text-sm px-2 py-1 rounded">
                                         {item.status}
                                     </span>
-                                    <span className="bg-[#FFD666] text-[#FFD666] text-sm px-2 py-1 rounded ml-2">
+                                    <span className="bg-[#423419] text-[#FFD666] text-sm px-2 py-1 rounded ml-2">
                                         {item.license}
                                     </span>
                                     <span className="bg-[#422721] text-[#FFAC82] text-sm px-2 py-1 rounded ml-2">
