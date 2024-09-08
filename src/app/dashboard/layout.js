@@ -5,13 +5,13 @@ export default function DashboardLayout({
     children, // will be a page or nested layout
 }) {
     return (
-        <section className="flex h-screen ">
-            <div className="w-1/5 py-6 px-8 bg-[#0D0F10]">
+        <section className="flex h-screen bg-[#131619]">
+            <div className="w-1/5 p-3">
                 <Sidebar />
             </div>
-            <div className="w-4/5 p-6 bg-gray-800">
+            <div className="w-4/5">
                 <Header />
-                {children}
+                <div className="pt-3">{children}</div>
             </div>
         </section>
     );

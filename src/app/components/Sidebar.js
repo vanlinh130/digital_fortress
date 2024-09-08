@@ -9,7 +9,7 @@ import { LuCalendarRange } from 'react-icons/lu';
 
 export default function Sidebar() {
     return (
-        <div className="flex flex-col gap-9">
+        <div className="bg-[#0D0F10] h-full flex flex-col gap-9 py-6 px-8 rounded-2xl">
             <div className="flex items-center justify-between">
                 <Link href="/" className="text-2xl font-semibold text-white ">
                     <Image src={logo} width={120} height={32} alt="Picture of the author" />
@@ -49,12 +49,16 @@ export default function Sidebar() {
                         </Link>
                     </li>
                     <li>
-                        <Link
-                            href="/dashboard/schedule"
-                            className="flex items-center gap-3 text-[#6F767E] rounded-xl p-3 hover:bg-[#B6F09C] hover:text-[#1A1D1F]"
-                        >
-                            <LuCalendarRange />
-                            <span className="text-[14px] font-medium ">Schedule</span>
+                        <Link href="/dashboard/schedule" className="">
+                            <div className="flex items-center justify-between text-[#6F767E] rounded-xl p-3 hover:bg-[#B6F09C] hover:text-[#1A1D1F]">
+                                <div className="flex items-center gap-3">
+                                    <LuCalendarRange />
+                                    <span className="text-[14px] font-medium ">Schedule</span>
+                                </div>
+                                <div className="flex justify-center  w-[32px] h-[32px] rounded-xl p-1 bg-[#B6F09C]">
+                                    <span className="text-[#1A1D1F]">2</span>
+                                </div>
+                            </div>
                         </Link>
                     </li>
                 </ul>
